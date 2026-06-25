@@ -1,56 +1,146 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>About Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        /* Using the exact same professional theme colors from your other pages */
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #1a202c;
+            --text-muted: #4a5568;
+            --bg-light: #f7fafc;
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--secondary-color);
+            
+            /* Your custom background image look */
+            background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("About Us.jpeg");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* STICKY TOP HEADER BAR */
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e2e8f0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between; /* Pushes the menu items cleanly to the right */
+            align-items: center;
+        }
+
+        .logo a {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        nav a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 20px;
+            font-size: 15px;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Clean document text card block */
+        .content-layout {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #ffffff; /* Gives text a solid white background so it stands out sharply */
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            border-top: 4px solid var(--primary-color);
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 0;
+        }
+        h2 {
+            color: var(--primary-color);
+            margin-top: 25px;
+        }
+        p {
+            color: #555;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-<h1>About Us</h1>
-<style>
-body {
-    color: gold;
 
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
-h1, h2 {
-    color: black;
-}
-body {
-    background:
-    linear-gradient(rgba(255,255,255,0.6),
-    rgba(255,255,255,0.6)),
-    url("About Us.jpeg");
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="/">Frontliners Tribute</a>
+            </div>
+            <nav>
+                <a href="https://saimatahirs91-rgb.github.io/">Home</a>
+            </nav>
+        </div>
+    </header>
 
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    <div class="content-layout">
+        <h1>About Us</h1>
 
-    font-family: Arial, sans-serif;
-    color: black;
-    margin: 20px;
-}
+        <h2>Who We Are</h2>
+        <p>
+            Welcome to our website. We are committed to creating high-quality digital content and user-friendly experiences that are simple, modern, and easy to use. Our main goal is to make information and tools easily accessible for everyone while maintaining clarity, creativity, and functionality in everything we build.
+        </p>
 
-</style>
-<h2>Who We Are</h2>
-    <p>
-      Welcome to our website. We are committed to creating high-quality digital content and user-friendly experiences that are simple, modern, and easy to use. Our main goal is to make information and tools easily accessible for everyone while maintaining clarity, creativity, and functionality in everything we build.
-    </p>
+        <h2>Our Vision</h2>
+        <p>
+            We believe that a good website should not only look attractive but also work smoothly and help users find what they need without confusion. That’s why we focus on clean design, useful features, and continuous improvement.
+        </p>
 
-    <h2>Our Vision</h2>
-    <p>
-      We believe that a good website should not only look attractive but also work smoothly and help users find what they need without confusion. That’s why we focus on clean design, useful features, and continuous improvement.
-    </p>
+        <h2>Our Mission</h2>
+        <p>
+            Every project we create is made with care, attention to detail, and a passion for learning and innovation. Our mission is to grow step by step while improving our skills and delivering better experiences for our users.
+        </p>
 
-    <h2>Our Mission</h2>
-    <p>
-      Every project we create is made with care, attention to detail, and a passion for learning and innovation. Our mission is to grow step by step while improving our skills and delivering better experiences for our users.
-    </p>
+        <h2>Feedback</h2>
+        <p>
+            We always welcome feedback and new ideas because they help us improve and make our work even better.
+        </p>
+    </div>
 
-    <h2>Feedback</h2>
-    <p>
-      We always welcome feedback and new ideas because they help us improve and make our work even better.
-    </p>
-</h2>
-</p>
+    <footer>
+        <p>© 2026 Frontliners Tribute Initiative. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
